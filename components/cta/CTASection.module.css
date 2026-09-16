@@ -1,0 +1,130 @@
+.ctaSection {
+    width: 100%;
+  
+    background: #ffffff;
+  }
+  
+  .container {
+    width: 100%;
+  
+    padding: 0 8% 70px;
+  }
+  
+  .ctaBox {
+    width: 100%;
+    min-height: 330px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    text-align: center;
+  
+    background: #45e878;
+  
+    border-radius: 12px;
+  
+    padding: 60px 30px;
+  }
+  
+  .ctaBox h2 {
+    margin: 0;
+  
+    font-family: Georgia, "Times New Roman", serif;
+  
+    font-size: 38px;
+    line-height: 1.05;
+  
+    letter-spacing: -1.5px;
+  
+    font-weight: 700;
+  
+    color: #15151d;
+  }
+  
+  .ctaBox p {
+    margin: 18px 0 0;
+  
+    font-family: Arial, Helvetica, sans-serif;
+  
+    font-size: 11px;
+    line-height: 1.6;
+  
+    color: #3d4d42;
+  }
+  
+  .button {
+    width: 117px;
+    height: 45px;
+  
+    margin-top: 25px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background: #15151d;
+  
+    color: #ffffff;
+  
+    border-radius: 2px;
+  
+    font-family: Arial, Helvetica, sans-serif;
+  
+    font-size: 11px;
+    font-weight: 600;
+  
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+  }
+  
+  .button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+  
+  
+  
+  @media (max-width: 900px) {
+    .container {
+      padding: 0 5% 60px;
+    }
+  
+    .ctaBox {
+      min-height: 300px;
+    }
+  
+    .ctaBox h2 {
+      font-size: 34px;
+    }
+  }
+  
+  
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 0 20px 50px;
+    }
+  
+    .ctaBox {
+      min-height: 320px;
+  
+      padding: 50px 20px;
+  
+      border-radius: 10px;
+    }
+  
+    .ctaBox h2 {
+      font-size: 30px;
+    }
+  
+    .ctaBox p {
+      font-size: 11px;
+    }
+  
+    .ctaBox p br {
+      display: none;
+    }
+  }

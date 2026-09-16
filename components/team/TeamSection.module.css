@@ -1,0 +1,205 @@
+.teamSection {
+    width: 100%;
+    min-height: 650px;
+  
+    background: #f8f7f0;
+  }
+  
+  .container {
+    width: 100%;
+  
+    padding: 75px 8% 85px;
+  }
+  
+
+  
+  .header {
+    display: grid;
+  
+    grid-template-columns: 55% 45%;
+  
+    align-items: start;
+  }
+  
+  .header h2 {
+    margin: 0;
+  
+    font-family: Georgia, "Times New Roman", serif;
+  
+    font-size: 38px;
+    line-height: 1.05;
+  
+    letter-spacing: -1.5px;
+  
+    font-weight: 700;
+  
+    color: #15151d;
+  }
+  
+  .header h2 span {
+    position: relative;
+  
+    display: inline-block;
+  
+    z-index: 1;
+  }
+  
+  .header h2 span::after {
+    content: "";
+  
+    position: absolute;
+  
+    left: -5px;
+    right: -5px;
+  
+    bottom: 3px;
+  
+    height: 14px;
+  
+    background: #45e878;
+  
+    z-index: -1;
+  }
+  
+  .header > p {
+    max-width: 390px;
+  
+    margin: 5px 0 0 auto;
+  
+    font-family: Arial, Helvetica, sans-serif;
+  
+    font-size: 12px;
+    line-height: 1.6;
+  
+    color: #66666d;
+  }
+  
+  
+ 
+  
+  .teamGrid {
+    display: grid;
+  
+    grid-template-columns: repeat(3, 1fr);
+  
+    gap: 70px;
+  
+    margin-top: 50px;
+  }
+  
+  .member {
+    text-align: center;
+  }
+  
+  
+ 
+  
+  .imageWrapper {
+    width: 250px;
+    height: 250px;
+  
+    margin: 0 auto;
+  
+    border-radius: 50%;
+  
+    overflow: hidden;
+  
+    border: 5px solid #ffffff;
+  
+    background: #e5e3dc;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+  
+    display: block;
+  
+    object-fit: cover;
+  }
+  
+  
+
+  
+  .member h3 {
+    margin: 20px 0 0;
+  
+    font-family: Georgia, "Times New Roman", serif;
+  
+    font-size: 15px;
+  
+    font-weight: 700;
+  
+    color: #15151d;
+  }
+  
+  .member p {
+    margin: 10px 0 0;
+  
+    font-family: Arial, Helvetica, sans-serif;
+  
+    font-size: 10px;
+  
+    color: #77777d;
+  }
+  
+  
+ 
+  
+  @media (max-width: 1000px) {
+    .container {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+    .header {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .teamGrid {
+      gap: 30px;
+    }
+  
+    .imageWrapper {
+      width: 210px;
+      height: 210px;
+    }
+  }
+  
+  
+ 
+  
+  @media (max-width: 700px) {
+    .container {
+      padding: 60px 25px;
+    }
+  
+    .header {
+      grid-template-columns: 1fr;
+  
+      gap: 25px;
+    }
+  
+    .header h2 {
+      font-size: 34px;
+    }
+  
+    .header > p {
+      margin: 0;
+  
+      max-width: 100%;
+    }
+  
+    .teamGrid {
+      grid-template-columns: 1fr;
+  
+      gap: 45px;
+  
+      margin-top: 45px;
+    }
+  
+    .imageWrapper {
+      width: 230px;
+      height: 230px;
+    }
+  }
